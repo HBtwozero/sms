@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <!-- <link href="assets/css/core.css" rel="stylesheet" type="text/css" /> -->
+
+    <link href="../assets/plugins/daterangepicker/daterangepicker.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/plugins/dataTables/jquery.dataTables.min.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/plugins/dataTables/dataTables.bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/css/karl.css" rel="stylesheet" type="text/css" />
+
+    <title>School Management System</title>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                       Dropdown
+              </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+    <a href="index.html">back</a>
+
+    <center>
+        <div class="card aligns-item-center" style="width: 1500px;">
+            <div class="card-body">
+                <section>
+                    <div class="col-md-12">
+                        <div class="card aligns-item-center">
+                            <nav aria-label="breadcrumb" class="card-header">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item fa fa-home">
+                                        <a href="index.html">&nbsp; Home</a>
+                                    </li>
+                                    <li class="breadcrumb-item"><a href="#">&nbsp; Library</a></li>
+
+                                    <li class="breadcrumb-item"> <a href="#">&nbsp; Data</a> </li>
+                                </ol>
+                            </nav>
+
+                            <div class="card-body">
+                                <div class="row">
+
+                                    <div class="col-md-12 colstyle">
+                                        <nav>
+                                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                                <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Admin Registration</a>
+                                                <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Student Admissions</a>
+                                                <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Teacher Registration</a>
+                                            </div>
+                                        </nav>
+                                        <div class="tab-content" id="nav-tabContent">
+                                            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+
+                                                <!-- Admin Registration Templaate starts here   -->
+
+                                                <div>
+                                                    <br />
+                                                    <div class="row">
+                                                        <div class="col-md-9">
+                                                            <div class="card">
+                                                                <div class="card-body">
+                                                                    <div class="form-row">
+                                                                        <div class="form-group col-md-6">
+                                                                            <label for="inputEmail4">Branch Name</label>
+                                                                            <select name id="inputSta" class="form-control">
+                                                                  <option value="1">Select</option>
+                                                                  <option value="2">2012</option>
+                                                                  <option value="3">2013</option>
+                                                                  <option value="4">2014</option>
+                                                                </select>
+                                                                        </div>
+                                                                        <div class="form-group col-md-6">
+                                                                            <label for="inputPassword4">Branch Admin</label>
+                                                                            <select name id="inputSta" class="form-control">
+                                                                  <option value="1">Select</option>
+                                                                  <option value="2">2012</option>
+                                                                  <option value="3">2013</option>
+                                                                  <option value="4">2014</option>
+                                                                </select>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Add new Branch Admin Starts -->
+                                                    <br />
+                                                    <form>
+                                                        <div class="row">
+                                                            <div class="col-md-4">
+                                                                <div class="card">
+                                                                    <div class="card-body">
+                                                                        <p class="card-text p-2 m-1 rounded" style="border:1px solid #0276d8;">
+                                                                            <b>First Name : </b>
+                                                                            <input type="text" name="firstname" id="firstname" class="form-control" required />
+                                                                        </p>
+
+                                                                        <p class="card-text p-2 m-1 rounded" style="border:1px solid #0276d8;">
+                                                                            <b>Prenom: </b>
+                                                                            <input type="text" name="lastname" id="lastname" class="form-group rounded" required />
+                                                                        </p>
+
+                                                                        <p class="card-text p-2 m-1 rounded" style="border:1px solid #0276d8;">
+                                                                            <b>Gender : </b>
+                                                                            <select name="" id="" required>
+                                                                            <option value="">Select</option>
+                                                                            <option value="Male">Male</option>
+                                                                            <option value="Female">Female</option>
+                                                                           </select>
+                                                                        </p>
+
+                                                                        <p class="card-text p-2 m-1 rounded" style="border:1px solid #0276d8;">
+                                                                            <b>Date of Birth : </b>
+                                                                            <input type="date" name="dob" id="dob" class="form-control" required />
+                                                                        </p>
+
+                                                                        <p class="card-text p-2 m-1 rounded" style="border:1px solid #0276d8;">
+                                                                            <b>Phone : </b>
+                                                                            <input type="tel" name="phone" id="phone" placeholder="Phone" class="form-control" value="" required />
+                                                                        </p>
+
+                                                                        <div class="clearfix"></div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <!-- Section col starts -->
+                                                            <div class="col-md-4">
+                                                                <div class="card">
+                                                                    <div class="card-body">
+                                                                        <p class="card-text p-2 m-1 rounded" style="border:1px solid #0276d8;">
+                                                                            <b>Email : </b>
+
+                                                                            <input type="email" name="email" id="email" class="form-control" />
+                                                                        </p>
+
+                                                                        <p class="card-text p-2 m-1 rounded" style="border:1px solid #0276d8;">
+                                                                            <b>NIF : </b>
+                                                                            <input type="text" name="nif" id="nif" class="form-control" />
+                                                                        </p>
+
+                                                                        <p class="card-text p-2 m-1 rounded" style="border:1px solid #0276d8;">
+                                                                            <b>Job Desgination : </b>
+                                                                            <select name="" id="">
+                                                                        <option value="">Select</option>
+                                                                        <option value="Teacher">Teacher</option>
+                                                                        <option value="Admin">Admin</option>
+                                                                        </select>
+                                                                        </p>
+
+                                                                        <p class="card-text p-2 m-1 rounded" style="border:1px solid #0276d8;">
+                                                                            <b>Joining Date : </b>
+                                                                            <input type="date" name="dob" id="dob" class="form-control" />
+                                                                        </p>
+
+                                                                        <p class="card-text p-2 m-1 rounded" style="border:1px solid #0276d8;">
+                                                                            <b>n : </b>
+                                                                            <input type="tel" name="phone" id="phone" placeholder="Phone" class="form-control" value="" />
+                                                                        </p>
+
+                                                                        <div class="clearfix"></div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- Section col ends -->
+
+                                                            <!-- Section col starts -->
+                                                            <div class="col-md-4">
+                                                                <div class="card">
+                                                                    <div class="card-body">
+                                                                        <input type="hidden" name="oldimage" value="" />
+                                                                        <div class="form-group m-0">
+                                                                            <label for="profilePhoto">Upload Photo Profile</label>
+                                                                            <input type="file" name="image" id="profilePhoto" />
+                                                                        </div>
+                                                                        <div class="form-group mt-2">
+                                                                            <input type="submit" name="profile_update" value="Update Profile" class="btn btn-danger btn-block" id="profileUpdateBtn" />
+                                                                        </div>
+
+                                                                        <div class="clearfix"></div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- Section col ends -->
+                                                        </div>
+                                                        <!-- form can end here -->
+                                                        <div class="text-right">
+                                                            <button type="button" class="btn btn-danger mt-3">
+                                                                              Cancel
+                                                                            </button>
+                                                            <button class="btn btn-primary mt-3" @click="submit">Save</button>
+                                                        </div>
+                                                    </form>
+
+                                                    <br />
+
+                                                    <!-- Add New Branch ends -->
+                                                </div>
+
+
+                                                <!-- Admin Registration Templaate Ends here   -->
+                                            </div>
+                                            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                                <!-- Student Registration Templaate starts here   -->
+                                                <div>
+
+                                                    <!-- Student Admission Starts Here -->
+
+                                                    <form>
+                                                        <div class="row">
+
+
+                                                            <div class="col-md-3 colstyle">
+                                                                <br>
+                                                                <div class="form-row">
+
+
+                                                                    <div class="form-group col-md-6">
+                                                                        <label for="inputEmail4">Curriculum</label>
+                                                                        <select name id="inputSta" class="form-control">
+                                                                        <option value="1">Select</option>
+                                                                        <option value="2">2012</option>
+                                                                        <option value="3">2013</option>
+                                                                        <option value="4">2014</option>
+                                                                      </select>
+                                                                    </div>
+                                                                    <div class="form-group col-md-6">
+                                                                        <label for="inputPassword4">Academic Year</label>
+                                                                        <select name id="inputSta" class="form-control">
+                                                                        <option value="1">Select</option>
+                                                                        <option value="2">2012</option>
+                                                                        <option value="3">2013</option>
+                                                                        <option value="4">2014</option>
+                                                                      </select>
+                                                                    </div>
+                                                                </div>
+
+
+                                                                <div class="form-row">
+                                                                    <div class="form-group col-md-6">
+                                                                        <label for="inputEmail4">Classe</label>
+                                                                        <select name id="inputSta" class="form-control">
+                                                                        <option value="1">Select</option>
+                                                                        <option value="2">2012</option>
+                                                                        <option value="3">2013</option>
+                                                                        <option value="4">2014</option>
+                                                                      </select>
+                                                                    </div>
+                                                                    <div class="form-group col-md-6">
+                                                                        <label for="inputPassword4">Application Status</label>
+                                                                        <select name id="inputSta" class="form-control">
+                                                                        <option value="1">Select</option>
+                                                                        <option value="2">2012</option>
+                                                                        <option value="3">2013</option>
+                                                                        <option value="4">2014</option>
+                                                                      </select>
+                                                                    </div>
+                                                                </div>
+
+                                                                <h2>Table Users</h2>
+                                                                <!-- path: "/student-list", -->
+                                                                <button type="button" class="btn btn-light btn-lg btn-block" @click="$router.push('/student-list')">Student-List</button>
+                                                                <!-- <table class="table table-bordered">
+                                                                    <thead class="bg-light">
+                                                                      <tr>
+                                                                        <th scope="col">Student Name</th>
+                                                                        <th scope="col">Class name</th>
+                                                                      </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                      <tr v-for="student in students" :key="student.first_name">
+                                                                        <td>{{student.first_name}}</td>
+                                                                        <td>{{student.last_name}}</td>
+                                                                      </tr>
+                                                                
+                                                                    </tbody>
+                                                                  </table> -->
+
+                                                                <!-- <ol v-for="student in students" :key="student.first_name">
+                                                                    <li>{{student.last_name}}</li>
+                                                                      <li>{{student.email}}</li>
+                                                                  </ol> -->
+                                                                <!-- 
+                                                                  <h2>List arondismment</h2>
+                                                                         <ol v-for="arrondissements in arrondissements" :key="arrondissements.id">
+                                                                      <li>{{arrondissements.arrondissement_name}}</li>
+                                                                      <li>{{arrondissements. depatement}}</li>
+                                                                     
+                                                                  </ol> -->
+
+
+                                                            </div>
+
+
+
+
+
+                                                            <div class="col-md-6 colstyle">
+                                                                <br>
+                                                                <div class="row">
+                                                                    <div class="col">
+                                                                        <!-- <div class="card-deck">
+                                                                                <div class="card border-primary">
+                                                                                  <div
+                                                                                    class="card-header bg-primary textlight text-center lead"
+                                                                                  >User ID:</div>
+                                                                                  <div class="card-body">
+                                                                                    <p class="card-text p-2 m-1 rounded">email:</p>
+                                                                                    <p class="card-text p-2 m-1 rounded">email:</p>
+                                                                                    <p class="card-text p-2 m-1 rounded">email:</p>
+                                                                                    <p class="card-text p-2 m-1 rounded">email:</p>
+                                                                                  </div>
+                                                                                </div>
+                                                                              </div> -->
+
+
+                                                                        <!-- Section col starts -->
+
+                                                                        <div class="card">
+
+
+                                                                            <div class='card-body'>
+
+
+                                                                                <p class='card-text p-2 m-1 rounded' style='border:1px solid #0276d8;'>
+                                                                                    <b>First Name : </b>
+                                                                                    <input type='text' name='firstname' id='firstname' class='form-control' v-model="user.first_name" />
+                                                                                </p>
+
+                                                                                <p class='card-text p-2 m-1 rounded' style='border:1px solid #0276d8;'>
+                                                                                    <b>Last Name : </b>
+                                                                                    <input type='text' name='lastname' id='lastname' class='form-control' v-model="user.last_name" required />
+                                                                                </p>
+
+                                                                                <p class='card-text p-2 m-1 rounded' style='border:1px solid #0276d8;'>
+                                                                                    <b>Gender : </b>
+                                                                                    <select name="" id="" v-model="user.gender" required>
+                                                                                          <option value="">Select</option>
+                                                                                          <option value="Male">Male</option>
+                                                                                          <option value="Female">Female</option>
+                                                                                        </select>
+
+                                                                                </p>
+
+                                                                                <p class='card-text p-2 m-1 rounded' style='border:1px solid #0276d8;'>
+                                                                                    <b>Date of Birth : </b>
+                                                                                    <input type='date' name='dob' id='dob' class='form-control' v-model="user.birthdate" required>
+                                                                                </p>
+
+
+
+
+
+
+
+                                                                                <div class='clearfix'></div>
+                                                                            </div>
+
+
+                                                                        </div>
+
+                                                                        <!-- Section col ends -->
+
+                                                                    </div>
+
+                                                                    <div class="col">
+                                                                        <!-- Section col starts -->
+                                                                        <div class="card">
+
+
+                                                                            <div class='card-body'>
+
+                                                                                <p class='card-text p-2 m-1 rounded' style='border:1px solid #0276d8;'>
+                                                                                    <b>Email : </b>
+                                                                                    <input type='email' name='email' id='email' class='form-control' v-model="user.email">
+                                                                                </p>
+
+                                                                                <p class='card-text p-2 m-1 rounded' style='border:1px solid #0276d8;'>
+                                                                                    <b>religion : </b>
+                                                                                    <input type='text' name='religion' id='religion' class='form-control'>
+                                                                                </p>
+
+                                                                                <p class='card-text p-2 m-1 rounded' style='border:1px solid #0276d8;'>
+                                                                                    <b>Groupe Sanguin : </b>
+                                                                                    <select name="" id="" v-model="user.blood_group">
+                                                                                          <option value="">Select</option>
+                                                                                          <option value="A+">A+</option>
+                                                                                          <option value="B+">B+</option>
+                                                                                        </select>
+
+                                                                                </p>
+
+                                                                                <p class='card-text p-2 m-1 rounded' style='border:1px solid #0276d8;'>
+                                                                                    <b>Joining Date : </b>
+                                                                                    <input type='date' name='dob' id='dob' class='form-control'>
+                                                                                </p>
+
+
+
+
+                                                                                <div class='clearfix'></div>
+                                                                            </div>
+
+
+                                                                        </div>
+                                                                        <!-- Section col ends -->
+                                                                    </div>
+                                                                </div>
+                                                                <br />
+                                                                <table class="table table-bordered">
+                                                                    <thead class="bg-light">
+                                                                        <tr>
+                                                                            <th scope="col">Student Name</th>
+                                                                            <th scope="col">Classs name</th>
+                                                                            <th scope="col">Classs name</th>
+                                                                            <th scope="col">Classs name</th>
+                                                                            <th scope="col">Classs name</th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td>Mark</td>
+                                                                            <td>Otto</td>
+                                                                            <td>Mark</td>
+                                                                            <td>Otto</td>
+                                                                            <td>Otto</td>
+                                                                        </tr>
+
+                                                                    </tbody>
+                                                                </table>
+
+
+
+                                                            </div>
+                                                            <div class="col-md-3 bg-light">
+                                                                <br>
+                                                                <div class="form-group">
+                                                                    <div class="main-img-preview">
+                                                                        <img class="thumbnail img-preview" src="../assets/images/img_avatar.png" title="Preview Logo" style="width:150px">
+                                                                    </div>
+
+                                                                    <br>
+
+                                                                    <div class="input-group btn btn-danger ">
+
+                                                                        <input id="logo-id" name="logo" type="file" class="attachment_upload" />
+
+
+                                                                    </div>
+                                                                    <p class="help-block">* Upload your company logo.</p>
+
+                                                                    <h4>Enrolling Information</h4>
+                                                                    <div class="form-row">
+                                                                        <div class="form-group col-md-12">
+                                                                            <label for="inputEmail4">Admission Info</label>
+                                                                            <select name id="inputSta" class="form-control">
+                                                                                  <option value="1">Select</option>
+                                                                                  <option value="2">2012</option>
+                                                                                  <option value="3">2013</option>
+                                                                                  <option value="4">2014</option>
+                                                                                </select>
+                                                                        </div>
+
+                                                                        <div class="form-group col-md-12">
+                                                                            <label for="inputEmail4">Curriculum Code</label>
+                                                                            <select name id="inputSta" class="form-control">
+                                                                                  <option value="1">Select</option>
+                                                                                  <option value="2">2012</option>
+                                                                                  <option value="3">2013</option>
+                                                                                  <option value="4">2014</option>
+                                                                                </select>
+                                                                        </div>
+                                                                        <div class="form-group col-md-12">
+                                                                            <label for="inputEmail4">Classs Info</label>
+                                                                            <select name id="inputSta" class="form-control">
+                                                                                  <option value="1">Select</option>
+                                                                                  <option value="2">2012</option>
+                                                                                  <option value="3">2013</option>
+                                                                                  <option value="4">2014</option>
+                                                                                </select>
+                                                                        </div>
+                                                                        <div class="form-group col-md-12">
+                                                                            <label for="inputEmail4">Merit Rating Info</label>
+                                                                            <select name id="inputSta" class="form-control">
+                                                                                  <option value="1">Select</option>
+                                                                                  <option value="2">2012</option>
+                                                                                  <option value="3">2013</option>
+                                                                                  <option value="4">2014</option>
+                                                                                </select>
+                                                                        </div>
+
+                                                                        <div class="form-group col-md-12">
+                                                                            <label for="inputEmail4">Application Type</label>
+                                                                            <select name id="inputSta" class="form-control">
+                                                                                  <option value="1">Select</option>
+                                                                                  <option value="2">2012</option>
+                                                                                  <option value="3">2013</option>
+                                                                                  <option value="4">2014</option>
+                                                                                </select>
+                                                                        </div>
+
+                                                                        <div class="form-group col-md-12">
+                                                                            <label for="inputEmail4">Application Status</label>
+                                                                            <select name id="inputSta" class="form-control">
+                                                                                  <option value="1">Select</option>
+                                                                                  <option value="2">2012</option>
+                                                                                  <option value="3">2013</option>
+                                                                                  <option value="4">2014</option>
+                                                                                </select>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+
+
+
+                                                        </div>
+                                                        <div class="text-right">
+                                                            <button type="button" class="btn btn-danger mt-3">
+                                                                              Cancel
+                                                                            </button>
+                                                            <button class="btn btn-primary mt-3" @click="submit">Save</button>
+                                                        </div>
+                                                    </form>
+
+
+                                                </div>
+                                                <!-- Student Registration Templaate Ends here   -->
+                                            </div>
+
+                                            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+
+                                                <div>
+                                                    <!-- Student Admission Starts Here -->
+
+                                                    <form>
+                                                        <div class="row">
+                                                            <div class="col-md-9 colstyle">
+                                                                <br>
+                                                                <div class="form-row">
+                                                                    <div class="form-group col-md-6">
+                                                                        <label for="inputEmail4">Curriculum</label>
+                                                                        <select name id="inputSta" class="form-control">
+                                                                        <option value="1">Select</option>
+                                                                        <option value="2">2012</option>
+                                                                        <option value="3">2013</option>
+                                                                        <option value="4">2014</option>
+                                                                      </select>
+                                                                    </div>
+                                                                    <div class="form-group col-md-6">
+                                                                        <label for="inputPassword4">Academic Year</label>
+                                                                        <select name id="inputSta" class="form-control">
+                                                                        <option value="1">Select</option>
+                                                                        <option value="2">2012</option>
+                                                                        <option value="3">2013</option>
+                                                                        <option value="4">2014</option>
+                                                                      </select>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form-row">
+                                                                    <div class="form-group col-md-6">
+                                                                        <label for="inputEmail4">Classe</label>
+                                                                        <select name id="inputSta" class="form-control">
+                                                                        <option value="1">Select</option>
+                                                                        <option value="2">2012</option>
+                                                                        <option value="3">2013</option>
+                                                                        <option value="4">2014</option>
+                                                                      </select>
+                                                                    </div>
+                                                                    <div class="form-group col-md-6">
+                                                                        <label for="inputPassword4">Application Status</label>
+                                                                        <select name id="inputSta" class="form-control">
+                                                                        <option value="1">Select</option>
+                                                                        <option value="2">2012</option>
+                                                                        <option value="3">2013</option>
+                                                                        <option value="4">2014</option>
+                                                                      </select>
+                                                                    </div>
+                                                                </div>
+
+                                                                <h2>Table Users</h2>
+                                                                <!-- path: "/student-list", -->
+                                                                <button type="button" class="btn btn-light btn-lg btn-block" @click="$router.push('/teacher-list')">Teacher-List</button>
+                                                                <div class="row">
+                                                                    <div class="col">
+                                                                        <!-- Section col starts -->
+
+                                                                        <div class="card">
+
+                                                                            <div class='card-body'>
+                                                                                <p class='card-text p-2 m-1 rounded' style='border:1px solid #0276d8;'>
+                                                                                    <b>First Name : </b>
+                                                                                    <input type='text' name='firstname' id='firstname' class='form-control' v-model="user.first_name" />
+                                                                                </p>
+
+                                                                                <p class='card-text p-2 m-1 rounded' style='border:1px solid #0276d8;'>
+                                                                                    <b>Last Name : </b>
+                                                                                    <input type='text' name='lastname' id='lastname' class='form-control' v-model="user.last_name" required />
+                                                                                </p>
+
+                                                                                <p class='card-text p-2 m-1 rounded' style='border:1px solid #0276d8;'>
+                                                                                    <b>Gender : </b>
+                                                                                    <select name="" id="" v-model="user.gender" required>
+                                                                                          <option value="">Select</option>
+                                                                                          <option value="Male">Male</option>
+                                                                                          <option value="Female">Female</option>
+                                                                                        </select>
+
+                                                                                </p>
+
+                                                                                <p class='card-text p-2 m-1 rounded' style='border:1px solid #0276d8;'>
+                                                                                    <b>Date of Birth : </b>
+                                                                                    <input type='date' name='dob' id='dob' class='form-control' v-model="user.birthdate" required>
+                                                                                </p>
+                                                                                <div class='clearfix'></div>
+                                                                            </div>
+
+
+                                                                        </div>
+
+                                                                        <!-- Section col ends -->
+
+                                                                    </div>
+
+                                                                    <div class="col">
+                                                                        <!-- Section col starts -->
+                                                                        <div class="card">
+
+
+                                                                            <div class='card-body'>
+
+                                                                                <p class='card-text p-2 m-1 rounded' style='border:1px solid #0276d8;'>
+                                                                                    <b>Email : </b>
+                                                                                    <input type='email' name='email' id='email' class='form-control' v-model="user.email">
+                                                                                </p>
+
+                                                                                <p class='card-text p-2 m-1 rounded' style='border:1px solid #0276d8;'>
+                                                                                    <b>religion : </b>
+                                                                                    <input type='text' name='religion' id='religion' class='form-control'>
+                                                                                </p>
+
+                                                                                <p class='card-text p-2 m-1 rounded' style='border:1px solid #0276d8;'>
+                                                                                    <b>Groupe Sanguin : </b>
+                                                                                    <select name="" id="" v-model="user.blood_group">
+                                                                                          <option value="">Select</option>
+                                                                                          <option value="A+">A+</option>
+                                                                                          <option value="B+">B+</option>
+                                                                                        </select>
+
+                                                                                </p>
+
+                                                                                <p class='card-text p-2 m-1 rounded' style='border:1px solid #0276d8;'>
+                                                                                    <b>Joining Date : </b>
+                                                                                    <input type='date' name='dob' id='dob' class='form-control' v-model="user.created">
+                                                                                </p>
+
+
+
+
+                                                                                <div class='clearfix'></div>
+                                                                            </div>
+
+
+                                                                        </div>
+                                                                        <!-- Section col ends -->
+                                                                    </div>
+                                                                </div>
+                                                                <br />
+                                                                <table class="table table-bordered">
+                                                                    <thead class="bg-light">
+                                                                        <tr>
+                                                                            <th scope="col">Student Name</th>
+                                                                            <th scope="col">Classs name</th>
+                                                                            <th scope="col">Classs name</th>
+                                                                            <th scope="col">Classs name</th>
+                                                                            <th scope="col">Classs name</th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td>Mark</td>
+                                                                            <td>Otto</td>
+                                                                            <td>Mark</td>
+                                                                            <td>Otto</td>
+                                                                            <td>Otto</td>
+                                                                        </tr>
+
+                                                                    </tbody>
+                                                                </table>
+
+
+
+                                                            </div>
+                                                            <div class="col-md-3 bg-light">
+                                                                <br>
+                                                                <div class="form-group">
+                                                                    <div class="main-img-preview">
+                                                                        <img class="thumbnail img-preview" src="../assets/images/img_avatar.png" title="Preview Logo" style="width:150px">
+                                                                    </div>
+                                                                    <br>
+                                                                    <div class="input-group btn-danger">
+                                                                        <input id="logo-id" name="logo" type="file" class="attachment_upload" />
+
+                                                                    </div>
+
+                                                                    <p class="help-block">* Upload Teacher picture.</p>
+
+                                                                    <h4>Enrolling Information</h4>
+                                                                    <div class="form-row">
+                                                                        <div class="form-group col-md-12">
+                                                                            <label for="inputEmail4">Admission Info</label>
+                                                                            <select name id="inputSta" class="form-control">
+                                                                                  <option value="1">Select</option>
+                                                                                  <option value="2">2012</option>
+                                                                                  <option value="3">2013</option>
+                                                                                  <option value="4">2014</option>
+                                                                                </select>
+                                                                        </div>
+
+                                                                        <div class="form-group col-md-12">
+                                                                            <label for="inputEmail4">Curriculum Code</label>
+                                                                            <select name id="inputSta" class="form-control">
+                                                                                  <option value="1">Select</option>
+                                                                                  <option value="2">2012</option>
+                                                                                  <option value="3">2013</option>
+                                                                                  <option value="4">2014</option>
+                                                                                </select>
+                                                                        </div>
+                                                                        <div class="form-group col-md-12">
+                                                                            <label for="inputEmail4">Classs Info</label>
+                                                                            <select name id="inputSta" class="form-control">
+                                                                                  <option value="1">Select</option>
+                                                                                  <option value="2">2012</option>
+                                                                                  <option value="3">2013</option>
+                                                                                  <option value="4">2014</option>
+                                                                                </select>
+                                                                        </div>
+                                                                        <div class="form-group col-md-12">
+                                                                            <label for="inputEmail4">Merit Rating Info</label>
+                                                                            <select name id="inputSta" class="form-control">
+                                                                                  <option value="1">Select</option>
+                                                                                  <option value="2">2012</option>
+                                                                                  <option value="3">2013</option>
+                                                                                  <option value="4">2014</option>
+                                                                                </select>
+                                                                        </div>
+
+                                                                        <div class="form-group col-md-12">
+                                                                            <label for="inputEmail4">Application Type</label>
+                                                                            <select name id="inputSta" class="form-control">
+                                                                                  <option value="1">Select</option>
+                                                                                  <option value="2">2012</option>
+                                                                                  <option value="3">2013</option>
+                                                                                  <option value="4">2014</option>
+                                                                                </select>
+                                                                        </div>
+
+                                                                        <div class="form-group col-md-12">
+                                                                            <label for="inputEmail4">Application Status</label>
+                                                                            <select name id="inputSta" class="form-control">
+                                                                                  <option value="1">Select</option>
+                                                                                  <option value="2">2012</option>
+                                                                                  <option value="3">2013</option>
+                                                                                  <option value="4">2014</option>
+                                                                                </select>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="text-right">
+                                                            <button type="button" class="btn btn-danger mt-3">
+                                                                              Cancel
+                                                                            </button>
+                                                            <button class="btn btn-primary mt-3" @click="submit">Save</button>
+                                                        </div>
+
+                                                    </form>
+
+
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+
+            </div>
+        </div>
+    </center>
+    <script>
+        window.$ = window.jQuery = require('jquery');
+    </script>
+
+    <script>
+        require('../renderer.js');
+    </script>
+
+    <script src="../assets/plugins/bootstrap/bootstrap.min.js"></script>
+    <script src="../assets/plugins/chosen/chosen.jquery.min.js"></script>
+    <script src="../assets/plugins/jquery-ui/jquery.form.min.js"></script>
+    <script src="../assets/plugins/daterangepicker/daterangepicker.min.js"></script>
+    <script src="../assets/plugins/dataTables/jquery.dataTables.min.js"></script>
+    <script src="../assets/plugins/dataTables/jquery.dataTables.bootstrap.js"></script>
+</body>
+
+</html>
