@@ -4,3 +4,6 @@
 // `nodeIntegration` is turned off. Use `preload.js` to
 // selectively enable features needed in the rendering
 // process.
+
+require('./assets/js/registration.js')
+require('./assets/js/school.js')
