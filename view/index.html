@@ -3,172 +3,373 @@
 
 <head>
     <meta charset="UTF-8">
-    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
-    <link href="../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <!-- <link href="assets/css/core.css" rel="stylesheet" type="text/css" /> -->
+    <title>Admin | Home 1</title>
 
-    <link href="../assets/plugins/daterangepicker/daterangepicker.css" rel="stylesheet" type="text/css" />
-    <link href="../assets/plugins/dataTables/jquery.dataTables.min.css" rel="stylesheet" type="text/css" />
-    <link href="../assets/plugins/dataTables/dataTables.bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <link href="../assets/css/karl.css" rel="stylesheet" type="text/css" />
 
-    <title>School Management System</title>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Favicon -->
+    <!-- <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png"> -->
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Fontawesome CSS -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- Flaticon CSS -->
+    <link rel="stylesheet" href="fonts/flaticon.css">
+    <!-- Full Calender CSS -->
+    <link rel="stylesheet" href="css/fullcalendar.min.css">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="css/animate.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Modernize js -->
+    <script src="js/modernizr-3.6.0.min.js"></script>
 </head>
 
 <body>
+    <!-- Preloader Start Here -->
 
-    <header>
-        <nav class="navbar navbar-expand-lg">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+    <!-- Preloader End Here -->
+    <div id="wrapper" class="wrapper bg-ash">
+        <!-- Header Menu Area Start Here -->
+        <div class="navbar navbar-expand-md header-menu-one bg-light">
+            <div class="nav-bar-header-one">
+                <div class="header-logo">
+                    <a href="index.html">
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Dropdown
-              </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                    </li>
-                </ul>
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                </form>
-            </div>
-        </nav>
-    </header>
-
-    <section>
-        <div class="container">
-
-            <br>
-
-            <div class="row">
-                <div class="card aligns-item-center" style="width: 1200px; height:800px">
-                    <h5 class="card-header">Featured</h5>
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-md-2 col-ms-6">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <center>
-                                            <img src="../assets/images/home.png" alt="">
-                                        </center>
-                                    </div>
-                                    <button type="button" class="btn btn-light btn-lg btn-block">Home</button>
-                                </div>
-                            </div>
-                            <div class="col-md-2 col-ms-6">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <center>
-                                            <img src="../assets/images/icons8-schedule-100.png" style="width:80px; height:80px;">
-                                        </center>
-                                    </div>
-
-                                    <a href="academic.html" class="btn btn-light btn-lg btn-block">Academics</a>
-
-                                </div>
-                            </div>
-                            <div class="col-md-2 col-ms-6">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <center>
-                                            <img src="../assets/images/icons8-schedule-100.png" style="width:80px; height:80px;">
-                                        </center>
-                                    </div>
-                                    <button type="button" class="btn btn-light btn-lg btn-block">Add-</button>
-                                </div>
-                            </div>
-                            <div class="col-md-2 col-ms-6">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <center>
-                                            <img src="../assets/images/icons8-admin-settings-male-80.png" style="width:80px; height:80px;">
-                                        </center>
-                                    </div>
-                                    <button type="button" class="btn btn-light btn-lg btn-block">Academic</button>
-
-
-                                </div>
-                            </div>
-                            <div class="col-md-2 col-ms-6">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <center>
-                                            <img src="../assets/images/icons8-gear-80.png" style="width:80px; height:80px;">
-                                        </center>
-                                    </div>
-                                   
-                                    <a href="dashboard.html" class="btn btn-light btn-lg btn-block">HR-Dashboard</a>
-                                </div>
-                            </div>
-                            <div class="col-md-2 col-ms-6">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <center>
-                                            <img src="../assets/images/icons8-gear-80.png" style="width:80px; height:80px;">
-                                        </center>
-                                    </div>
-                                    <button type="button" class="btn btn-light btn-lg btn-block">Settings</button>
-                                </div>
-
-
-                            </div>
-
-                        </div>
-
-                        <br>
-
-                        <div class="row">
-
-                            <div class="col-md-2 col-ms-6">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <center>
-                                            <img src="../assets/images/icons8-add-user-group-man-man-80.png" style="width:80px; height:80px;">
-                                        </center>
-                                    </div>
- 
-                                    <a href="student-management.html" class="btn btn-light btn-lg btn-block">Student Management</a>
-                                    
-                                    <a href="../AKKHOR _ All Students.html" class="btn btn-light btn-lg btn-block">Student </a>
-                                </div>
-                            </div>
-                            <div class="col-md-2 col-ms-6">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <center>
-                                            <img src="../assets/images/icons8-books-80.png" style="width:80px; height:80px;">
-                                        </center>
-                                    </div>
-                                    <button type="button" class="btn btn-light btn-lg btn-block">Librairie</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                        <h1>Karl</h1>
+                    </a>
+                </div>
+                <div class="toggle-button sidebar-toggle">
+                    <button type="button" class="item-link">
+                        <span class="btn-icon-wrap">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </span>
+                    </button>
                 </div>
             </div>
 
+
         </div>
-    </section>
+        <!-- Header Menu Area End Here -->
+        <!-- Page Area Start Here -->
+        <div class="dashboard-page-one">
+            <!-- Sidebar Area Start Here -->
+            <div class="sidebar-main sidebar-menu-one sidebar-expand-md sidebar-color">
+                <div class="mobile-sidebar-header d-md-none">
+                    <div class="header-logo">
+                        <a href="index.html"><img src="img/logo1.png" alt="logo"></a>
+                    </div>
+                </div>
+                <div class="sidebar-menu-content">
+                    <ul class="nav nav-sidebar-menu sidebar-toggle-view">
+                        <li class="nav-item sidebar-nav-item">
+                            <a href="#" class="nav-link"><i class="fas fa-home"></i><span>Dashboard</span></a>
+                            <ul class="nav sub-group-menu">
+                                <li class="nav-item">
+                                    <a href="index.html" class="nav-link"><i class="fas fa-angle-right"></i>Admin</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="all-student.html" class="nav-link"><i
+                                            class="fas fa-angle-right"></i>Students</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="index4.html" class="nav-link"><i class="fas fa-angle-right"></i>Parents</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="index5.html" class="nav-link"><i
+                                            class="fas fa-angle-right"></i>Teachers</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item sidebar-nav-item">
+                            <a href="#" class="nav-link"><i class="fas fa-user"></i><span>Students</span></a>
+                            <ul class="nav sub-group-menu">
+                                <li class="nav-item">
+                                    <a href="all-student.html" class="nav-link"><i class="fas fa-angle-right"></i>All
+                                        Students</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="student-details.html" class="nav-link"><i
+                                            class="fas fa-angle-right"></i>Student Details</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="admit-form.html" class="nav-link"><i
+                                            class="fas fa-angle-right"></i>Admission Form</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="student-promotion.html" class="nav-link"><i
+                                            class="fas fa-angle-right"></i>Student Promotion</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item sidebar-nav-item">
+                            <a href="#" class="nav-link"><i
+                                    class="fas fa-table"></i><span>Teachers</span></a>
+                            <ul class="nav sub-group-menu">
+                                <li class="nav-item">
+                                    <a href="all-teacher.html" class="nav-link"><i class="fas fa-angle-right"></i>All
+                                        Teachers</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="teacher-details.html" class="nav-link"><i
+                                            class="fas fa-angle-right"></i>Teacher Details</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="add-teacher.html" class="nav-link"><i class="fas fa-angle-right"></i>Add
+                                        Teacher</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="teacher-payment.html" class="nav-link"><i
+                                            class="fas fa-angle-right"></i>Payment</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item sidebar-nav-item">
+                            <a href="#" class="nav-link"><i class="fas fa-user-friends"></i><span>Parents</span></a>
+                            <ul class="nav sub-group-menu">
+                                <li class="nav-item">
+                                    <a href="all-parents.html" class="nav-link"><i class="fas fa-angle-right"></i>All
+                                        Parents</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="parents-details.html" class="nav-link"><i
+                                            class="fas fa-angle-right"></i>Parents Details</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="add-parents.html" class="nav-link"><i class="fas fa-angle-right"></i>Add
+                                        Parent</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item sidebar-nav-item">
+                            <a href="#" class="nav-link"><i class="fas fa-book"></i><span>Library</span></a>
+                            <ul class="nav sub-group-menu">
+                                <li class="nav-item">
+                                    <a href="all-book.html" class="nav-link"><i class="fas fa-angle-right"></i>All
+                                        Book</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="add-book.html" class="nav-link"><i class="fas fa-angle-right"></i>Add New
+                                        Book</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item sidebar-nav-item">
+                            <a href="#" class="nav-link"><i class="fas fa-money-check-alt"></i><span>Acconunt</span></a>
+                            <ul class="nav sub-group-menu">
+                                <li class="nav-item">
+                                    <a href="all-fees.html" class="nav-link"><i class="fas fa-angle-right"></i>All Fees
+                                        Collection</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="all-expense.html" class="nav-link"><i
+                                            class="fas fa-angle-right"></i>Expenses</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="add-expense.html" class="nav-link"><i class="fas fa-angle-right"></i>Add
+                                        Expenses</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item sidebar-nav-item">
+                            <a href="#" class="nav-link"><i
+                                    class="fas fa-chalkboard-teacher"></i><span>Class</span></a>
+                            <ul class="nav sub-group-menu">
+                                <li class="nav-item">
+                                    <a href="all-class.html" class="nav-link"><i class="fas fa-angle-right"></i>All
+                                        Classes</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="add-class.html" class="nav-link"><i class="fas fa-angle-right"></i>Add New
+                                        Class</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="all-subject.html" class="nav-link"><i
+                                    class="fas fa-chalkboard"></i><span>Subject</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="class-routine.html" class="nav-link"><i class="fas fa-calendar"></i><span>Class
+                                    Routine</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="student-attendence.html" class="nav-link"><i
+                                    class="fas fa-cogs"></i><span>Attendence</span></a>
+                        </li>
+                        <li class="nav-item sidebar-nav-item">
+                            <a href="#" class="nav-link"><i class="fas fa-home"></i><span>Exam</span></a>
+                            <ul class="nav sub-group-menu">
+                                <li class="nav-item">
+                                    <a href="exam-schedule.html" class="nav-link"><i class="fas fa-angle-right"></i>Exam
+                                        Schedule</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="exam-grade.html" class="nav-link"><i class="fas fa-angle-right"></i>Exam
+                                        Grades</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="notice-board.html" class="nav-link"><i
+                                    class="fas fa-sticky-note"></i><span>Notice</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="messaging.html" class="nav-link"><i
+                                    class="fas fa-inbox"></i><span>Messeage</span></a>
+                        </li>
+
+
+                        <li class="nav-item">
+                            <a href="account-settings.html" class="nav-link"><i
+                                    class="fas fa-cog"></i><span>Account</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Sidebar Area End Here -->
+            <div class="dashboard-content-one">
+                <!-- Breadcubs Area Start Here -->
+                <div class="breadcrumbs-area">
+                    <h3>Admin Dashboard</h3>
+                    <ul>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>Admin</li>
+                    </ul>
+                </div>
+                <!-- Breadcubs Area End Here -->
+                <!-- Dashboard summery Start Here -->
+
+                <!-- Dashboard summery End Here -->
+                <!-- Dashboard Content Start Here -->
+                <div class="row gutters-20">
+                    <div class="col-12 col-xl-12 col-12-xxxl">
+                        <div class="card dashboard-card-one pd-b-20">
+                            <div class="card-body">
+
+                                <div class="row">
+                                    <div class="col-md-2 col-ms-6">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <center>
+                                                    <img src="../assets/images/home.png" alt="">
+                                                </center>
+                                            </div>
+                                            <button type="button" class="btn btn-light btn-lg btn-block">Home</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 col-ms-6">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <center>
+                                                    <img src="../assets/images/home.png" alt="">
+                                                </center>
+                                            </div>
+                                            <button type="button" class="btn btn-light btn-lg btn-block">Home</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 col-ms-6">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <center>
+                                                    <img src="../assets/images/icons8-schedule-100.png" style="width:80px; height:80px;">
+                                                </center>
+                                            </div>
+
+                                            <a href="academic.html" class="btn btn-light btn-lg btn-block">Academics</a>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 col-ms-6">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <center>
+                                                    <img src="../assets/images/icons8-schedule-100.png" style="width:80px; height:80px;">
+                                                </center>
+                                            </div>
+                                            <button type="button" class="btn btn-light btn-lg btn-block">Add-</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 col-ms-6">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <center>
+                                                    <img src="../assets/images/icons8-admin-settings-male-80.png" style="width:80px; height:80px;">
+                                                </center>
+                                            </div>
+                                            <button type="button" class="btn btn-light btn-lg btn-block">Academic</button>
+
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-2 col-ms-6">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <center>
+                                                    <img src="../assets/images/icons8-gear-80.png" style="width:80px; height:80px;">
+                                                </center>
+                                            </div>
+
+                                            <a href="dashboard.html" class="btn btn-light btn-lg btn-block">HR-Dashboard</a>
+                                        </div>
+                                    </div>
+
+
+
+                                </div>
+
+
+                                <div class="row">
+
+                                    <div class="col-md-2 col-ms-6">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <center>
+                                                    <img src="../assets/images/icons8-gear-80.png" style="width:80px; height:80px;">
+                                                </center>
+                                            </div>
+                                            <button type="button" class="btn btn-light btn-lg btn-block">Settings</button>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-md-2 col-ms-6">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <center>
+                                                    <img src="../assets/images/icons8-add-user-group-man-man-80.png" style="width:80px; height:80px;">
+                                                </center>
+                                            </div>
+
+                                            <a href="student-management.html" class="btn btn-light btn-lg btn-block">Student Management</a>
+
+                                            <a href="../AKKHOR _ All Students.html" class="btn btn-light btn-lg btn-block">Student </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 col-ms-6">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <center>
+                                                    <img src="../assets/images/icons8-books-80.png" style="width:80px; height:80px;">
+                                                </center>
+                                            </div>
+                                            <button type="button" class="btn btn-light btn-lg btn-block">Librairie</button>
+                                        </div>
+                                    </div>
+                                </div>
 
 
 
@@ -176,14 +377,19 @@
 
 
 
+                            </div>
+                        </div>
+                    </div>
 
 
 
+                </div>
+                <!-- Dashboard Content End Here -->
 
-
-
-
-
+            </div>
+        </div>
+        <!-- Page Area End Here -->
+    </div>
     <script>
         window.$ = window.jQuery = require('jquery');
     </script>
@@ -194,12 +400,33 @@
 
 
 
+
+    <!-- jquery-->
+    <!-- <script src="js/jquery-3.3.1.min.js"></script> -->
+
+    <!-- Plugins js -->
+    <script src="js/plugins.js"></script>
+    <!-- Popper js -->
+    <script src="js/popper.min.js"></script>
+    <!-- Bootstrap js -->
+
+    <!-- Counterup Js -->
+    <script src="js/jquery.counterup.min.js"></script>
+    <!-- Moment Js -->
+    <script src="js/moment.min.js"></script>
+    <!-- Waypoints Js -->
+    <script src="js/jquery.waypoints.min.js"></script>
+    <!-- Scroll Up Js -->
+    <script src="js/jquery.scrollUp.min.js"></script>
+    <!-- Full Calender Js -->
+    <script src="js/fullcalendar.min.js"></script>
+    <!-- Chart Js -->
+    <script src="js/Chart.min.js"></script>
+    <!-- Custom Js -->
+    <script src="js/main.js"></script>
     <script src="../assets/plugins/bootstrap/bootstrap.min.js"></script>
-    <script src="../assets/plugins/chosen/chosen.jquery.min.js"></script>
-    <script src="../assets/plugins/jquery-ui/jquery.form.min.js"></script>
-    <script src="../assets/plugins/daterangepicker/daterangepicker.min.js"></script>
-    <script src="../assets/plugins/dataTables/jquery.dataTables.min.js"></script>
-    <script src="../assets/plugins/dataTables/jquery.dataTables.bootstrap.js"></script>
+    <script src="../assets/plugins/jquery-ui/jquery-ui.min.js"></script>
+
 </body>
 
 </html>

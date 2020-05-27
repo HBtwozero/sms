@@ -1,6 +1,6 @@
 # sms
 This is a school Management Sytem! Project Starts on may 25 2020
-
+https://preview.themeforest.net/item/akkhor-school-management-admin-template/full_screen_preview/23687250?_ga=2.96915423.1162604144.1590521171-1443887240.1588032901
 
 # Database design
 
