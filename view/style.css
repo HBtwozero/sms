@@ -79,6 +79,7 @@ body {
     text-rendering: optimizeLegibility;
     color: #646464;
     background-color: #f0f1f3;
+    /* background-color: red; */
 }
 
 p {
@@ -2498,6 +2499,7 @@ ul {
 
 .sidebar-menu-one .sidebar-menu-content .nav-sidebar-menu>.nav-item .nav-link.menu-active {
     background-color: #051f3e;
+    /* background-color: red; */
 }
 
 .sidebar-menu-one .sidebar-menu-content .nav-sidebar-menu>.nav-item .nav-link.menu-active span {
@@ -2507,6 +2509,7 @@ ul {
 .sidebar-menu-one .sidebar-menu-content .nav-sidebar-menu>.nav-item .sub-group-menu {
     display: none;
     background-color: #051f3e;
+    /* background-color: white; */
     padding: 10px 0;
 }
 
@@ -2524,7 +2527,7 @@ ul {
 }
 
 .sidebar-menu-one .sidebar-menu-content .nav-sidebar-menu>.nav-item .sub-group-menu>.nav-item .nav-link:hover {
-    background-color: #042954;
+    background-color: #543f04;
     color: #ffffff;
 }
 
@@ -4223,6 +4226,7 @@ ul {
     -ms-flex-direction: column;
     flex-direction: column;
     padding: 0 30px;
+    background-color: white !important;
 }
 
 @media only screen and (max-width: 767px) {
@@ -5043,6 +5047,7 @@ ul {
 .sidebar-color {
     /* background-color: #042954; */
     background-color: #0053a0;
+    /* background-color: white !important; */
 }
 
 .bg-gradient-fb {
