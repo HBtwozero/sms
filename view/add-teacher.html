@@ -19,7 +19,7 @@
     <!-- Fontawesome CSS -->
     <link rel="stylesheet" href="css/all.min.css">
     <!-- Flaticon CSS -->
-    <link rel="stylesheet" href="fonts/flaticon.css">
+    <!-- <link rel="stylesheet" href="fonts/flaticon.css"> -->
     <!-- Animate CSS -->
     <link rel="stylesheet" href="css/animate.min.css">
     <!-- Select 2 CSS -->
@@ -77,8 +77,8 @@
                                     <a href="index.html" class="nav-link"><i class="fas fa-angle-right"></i>Admin</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="all-student.html" class="nav-link"><i
-                                            class="fas fa-angle-right"></i>Students</a>
+                                    <a href="all-teacher.html" class="nav-link"><i
+                                            class="fas fa-angle-right"></i>teachers</a>
                                 </li>
                                 <li class="nav-item">
                                     <a href="index4.html" class="nav-link"><i class="fas fa-angle-right"></i>Parents</a>
@@ -90,23 +90,23 @@
                             </ul>
                         </li>
                         <li class="nav-item sidebar-nav-item">
-                            <a href="#" class="nav-link"><i class="fas fa-user"></i><span>Students</span></a>
+                            <a href="#" class="nav-link"><i class="fas fa-user"></i><span>teachers</span></a>
                             <ul class="nav sub-group-menu">
                                 <li class="nav-item">
-                                    <a href="all-student.html" class="nav-link"><i class="fas fa-angle-right"></i>All
-                                        Students</a>
+                                    <a href="all-teacher.html" class="nav-link"><i class="fas fa-angle-right"></i>All
+                                        teachers</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="student-details.html" class="nav-link"><i
-                                            class="fas fa-angle-right"></i>Student Details</a>
+                                    <a href="teacher-details.html" class="nav-link"><i
+                                            class="fas fa-angle-right"></i>teacher Details</a>
                                 </li>
                                 <li class="nav-item">
                                     <a href="admit-form.html" class="nav-link"><i
                                             class="fas fa-angle-right"></i>Admission Form</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="student-promotion.html" class="nav-link"><i
-                                            class="fas fa-angle-right"></i>Student Promotion</a>
+                                    <a href="teacher-promotion.html" class="nav-link"><i
+                                            class="fas fa-angle-right"></i>teacher Promotion</a>
                                 </li>
                             </ul>
                         </li>
@@ -202,7 +202,7 @@
                                     Routine</span></a>
                         </li>
                         <li class="nav-item">
-                            <a href="student-attendence.html" class="nav-link"><i
+                            <a href="teacher-attendence.html" class="nav-link"><i
                                     class="fas fa-cogs"></i><span>Attendence</span></a>
                         </li>
                         <li class="nav-item sidebar-nav-item">
@@ -266,19 +266,23 @@
                                 </div>
                             </div>
                         </div>
-                        <form class="new-added-form">
+                        <form class="new-added-form" id="saveteacher" encType="multipart/form-data" data-parsley-validate>
                             <div class="row">
+                                <input type="hidden" name="id" id="image_id">
+                                <input type="hidden" name="img" id="img">
+                                <input type="hidden" name="remove" id="remove_img">
+
                                 <div class="col-xl-3 col-lg-6 col-12 form-group">
                                     <label>First Name *</label>
-                                    <input type="text" placeholder="" class="form-control">
+                                    <input type="text" placeholder="" name="firstname" class="form-control" id='teacher_firstname'>
                                 </div>
                                 <div class="col-xl-3 col-lg-6 col-12 form-group">
                                     <label>Last Name *</label>
-                                    <input type="text" placeholder="" class="form-control">
+                                    <input type="text" placeholder="" name="lastname" class="form-control" id='teacher_lastname'>
                                 </div>
                                 <div class="col-xl-3 col-lg-6 col-12 form-group">
                                     <label>Gender *</label>
-                                    <select class="form-control">
+                                    <select class="form-control" name="gender" id='teacher_gender'>
                                         <option value="">Please Select Gender *</option>
                                         <option value="1">Male</option>
                                         <option value="2">Female</option>
@@ -287,16 +291,16 @@
                                 </div>
                                 <div class="col-xl-3 col-lg-6 col-12 form-group">
                                     <label>Date Of Birth *</label>
-                                    <input type="text" placeholder="dd/mm/yyyy" class="form-control air-datepicker">
+                                    <input type="text" placeholder="dd/mm/yyyy" name="dob" class="form-control air-datepicker" data-position='bottom right' id='teacher_dob'>
                                     <i class="far fa-calendar-alt"></i>
                                 </div>
-                                <div class="col-xl-3 col-lg-6 col-12 form-group">
-                                    <label>ID No</label>
+                                <!-- <div class="col-xl-3 col-lg-6 col-12 form-group">
+                                    <label>EnRoll</label>
                                     <input type="text" placeholder="" class="form-control">
-                                </div>
+                                </div> -->
                                 <div class="col-xl-3 col-lg-6 col-12 form-group">
                                     <label>Blood Group *</label>
-                                    <select class="form-control">
+                                    <select class="form-control" name="bloodGroup" id='teacher_bloodGroup'>
                                         <option value="">Please Select Group *</option>
                                         <option value="1">A+</option>
                                         <option value="2">A-</option>
@@ -306,9 +310,12 @@
                                         <option value="3">O-</option>
                                     </select>
                                 </div>
+
+
+
                                 <div class="col-xl-3 col-lg-6 col-12 form-group">
                                     <label>Religion *</label>
-                                    <select class="form-control">
+                                    <select class="form-control" id='religion' name="religion">
                                         <option value="">Please Select Religion *</option>
                                         <option value="1">Islam</option>
                                         <option value="2">Hindu</option>
@@ -319,11 +326,11 @@
                                 </div>
                                 <div class="col-xl-3 col-lg-6 col-12 form-group">
                                     <label>E-Mail</label>
-                                    <input type="email" placeholder="" class="form-control">
+                                    <input type="email" placeholder="" name="email" class="form-control">
                                 </div>
                                 <div class="col-xl-3 col-lg-6 col-12 form-group">
                                     <label>Class *</label>
-                                    <select class="form-control">
+                                    <select class="form-control" id='class_name'>
                                         <option value="">Please Select Class *</option>
                                         <option value="1">Play</option>
                                         <option value="2">Nursery</option>
@@ -336,7 +343,7 @@
                                 </div>
                                 <div class="col-xl-3 col-lg-6 col-12 form-group">
                                     <label>Section *</label>
-                                    <select class="form-control">
+                                    <select class="form-control" name="section" id='class_section'>
                                         <option value="">Please Select Section *</option>
                                         <option value="1">Pink</option>
                                         <option value="2">Blue</option>
@@ -346,23 +353,24 @@
                                     </select>
                                 </div>
                                 <div class="col-xl-3 col-lg-6 col-12 form-group">
-                                    <label>Address</label>
-                                    <input type="text" placeholder="" class="form-control">
+                                    <label>Admission ID</label>
+                                    <input type="text" placeholder="" parsley-trigger="change" class="form-control">
                                 </div>
                                 <div class="col-xl-3 col-lg-6 col-12 form-group">
                                     <label>Phone</label>
-                                    <input type="text" placeholder="" class="form-control">
+                                    <input type="text" placeholder="" name="phone" parsley-trigger="change" class="form-control" id='phoneNumber'>
                                 </div>
                                 <div class="col-lg-6 col-12 form-group">
                                     <label>Short BIO</label>
-                                    <textarea class="textarea form-control" name="message" id="form-message" cols="10" rows="9"></textarea>
+                                    <textarea class="textarea form-control" name="shortbio" parsley-trigger="change" name="message" id="form-message" cols="10" rows="9" id='shortbio'></textarea>
                                 </div>
                                 <div class="col-lg-6 col-12 form-group mg-t-30">
-                                    <label class="text-dark-medium">Upload Student Photo (150px X 150px)</label>
-                                    <input type="file" class="form-control-file">
+                                    <label class="text-dark-medium">Upload teacher Photo (150px X 150px)</label>
+                                    <div id="current_img"></div>
+                                    <input type="file" class="form-control-file" parsley-trigger="change" name="imagename" id="imagename">
                                 </div>
                                 <div class="col-12 form-group mg-t-8">
-                                    <button type="submit" class="btn-fill-lg btn-gradient-yellow btn-hover-bluedark">Save</button>
+                                    <button type="submit" id="submitEleve" class="btn-fill-lg btn-gradient-yellow btn-hover-bluedark">Save</button>
                                     <button type="reset" class="btn-fill-lg bg-blue-dark btn-hover-yellow">Reset</button>
                                 </div>
                             </div>
@@ -382,6 +390,10 @@
     </script>
 
 
+    <script>
+        require('../renderer.js');
+    </script>
+
     <!-- jquery-->
     <script src="js/jquery-3.3.1.min.js"></script>
     <!-- Plugins js -->
@@ -395,13 +407,14 @@
     <!-- Date Picker Js -->
     <script src="js/datepicker.min.js"></script>
     <!-- Smoothscroll Js -->
-    <script src="js/jquery.smoothscroll.min.js"></script>
+    <!-- <script src="js/jquery.smoothscroll.min.js"></script> -->
     <!-- Scroll Up Js -->
     <script src="js/jquery.scrollUp.min.js"></script>
     <!-- Custom Js -->
     <script src="js/main.js"></script>
     <script src="../assets/plugins/bootstrap/bootstrap.min.js"></script>
     <script src="../assets/plugins/jquery-ui/jquery-ui.min.js"></script>
+    <script src="../assets/plugins/jquery-ui/jquery.form.min.js"></script>
 
 </body>
 

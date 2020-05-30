@@ -31,4 +31,11 @@ app.get("/", function(req, res) {
 });
 
 
+
+app.use("/api/eleves", require("./api/eleves"));
+app.use("/api/teachers", require("./api/teachers"));
+app.use("/api/users", require("./api/users"));
+
+
+
 server.listen(PORT, () => console.log(`Listening on PORT ${PORT}`));
