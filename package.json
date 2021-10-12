@@ -17,7 +17,7 @@
     "author": "Karl Doudy Angrand && Max Andy Angrand",
     "license": "CC0-1.0",
     "devDependencies": {
-        "electron": "^9.0.0"
+        "electron": "^11.5.0"
     },
     "dependencies": {
         "async": "^3.2.0",
